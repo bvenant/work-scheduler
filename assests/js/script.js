@@ -35,5 +35,13 @@ colorCode();
 
 // Load data from local storage
 $("#9 .planner").val(localStorage.getItem("9"));
+$("#10 .planner").val(localStorage.getItem("10"));
+$("#11 .planner").val(localStorage.getItem("11"));
+$("#12 .planner").val(localStorage.getItem("12"));
+$("#13 .planner").val(localStorage.getItem("13"));
+$("#14 .planner").val(localStorage.getItem("14"));
+$("#14 .planner").val(localStorage.getItem("15"));
+$("#16 .planner").val(localStorage.getItem("16"));
+$("#17 .planner").val(localStorage.getItem("17"));
 
 });
