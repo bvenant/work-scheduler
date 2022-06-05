@@ -22,8 +22,6 @@ var colorCode = function() {
     $(".time-block").each(function() {
         var hours = parseInt($(this).attr("id"));
 
-        // console.log(this);
-
         if (hours > currentHour) {
             $(this).addClass("future");
         } else if (hours === currentHour) {
@@ -34,30 +32,8 @@ var colorCode = function() {
     });
 };
 colorCode();
+
+// Load data from local storage
+$("#9 .planner").val(localStorage.getItem("9"));
+
 });
-
-
-// $("#9").addClass("past");
-// $("#6").addClass("past");
-// console.log(moment().hour()-12);
-// // =========
-// var currentHour = moment().hour();
-  
-// if (currentHour > 12) {
-//     currentHour = currentHour - 12
-// }
-// if (currentHour === 5) {
-//     $("#6").addClass("present");
-// } 
-// // =========
-
-// for (var i; i < currentHour.length; i++) {
-
-// }
-
-// iterate over hours array
-//  if current hour is less than element
-//      then add past class
-//  if else current hour is equal to element
-//      then add present class
-//  else element is the future
