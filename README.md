@@ -36,6 +36,6 @@ THEN the saved events persist
 ### Links  
  
 
-[Workday Scheduler Website](https://bvenant.github.io/)  
+[Workday Scheduler Website](https://bvenant.github.io/work-scheduler/)  
 
 [Workday Scheduler repository](https://github.com/bvenant/work-scheduler) 
