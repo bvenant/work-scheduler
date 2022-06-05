@@ -3,7 +3,18 @@ $(document).ready(function() {
 // Current day displayed in calendar
 $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
 
-var saveBtn = $(".saveBtn");
+// Saves when button is clicked
+$(saveBtn).on("click", function() {
+    var plan = $(this).siblings(".planner").val();
+    var clock = $(this).parent().attr("id");
+
+    // Text for the event is saved in local storage
+    localStorage.setItem(plan, clock);
+});
+
+var colorCode = function() {
+    
+}
 
 });
 
@@ -25,16 +36,6 @@ if (currentHour === 5) {
 for (var i; i < currentHour.length; i++) {
 
 }
-
-saveBtn.on("click", function() {
-    var time = $(this).siblings(".hour").text();
-    var description = 
-})
-
-
-var hours = [
-    9, 10, 11, 12, 1, 2, 3, 4, 5
-]
 
 // iterate over hours array
 //  if current hour is less than element
